@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<h1>Convert date from Gregorian to Hebrew</h1>
+
+<div class="root">
+
+  <mat-form-field>
+    <input matInput [matDatepicker]="myDatePicker" placeholder="date..." [(ngModel)]="gregDate" name="gregDate">
+    <mat-datepicker-toggle [for]="myDatePicker" matSuffix></mat-datepicker-toggle>
+    <mat-datepicker #myDatePicker></mat-datepicker>
+  </mat-form-field>
+
+  <button (click)="convertDate()">convert!! <i class="fa fa-circle-o-notch fa-spin"></i></button>
+
+</div>
+
+<div class="result">{{result.date}}</div>
+
+
+
+
+
